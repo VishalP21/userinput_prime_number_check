@@ -9,9 +9,15 @@ while (num > 0)
     switch (value)
     {
         case 0:
+            Console.WriteLine("How many number do you want to test ");
+            int test_number = Convert.ToInt32(Console.ReadLine());
+            
+            for (int i = 1; i <= test_number; i++)
+            {
             Console.WriteLine("enter number");
             int number = Convert.ToInt32(Console.ReadLine());
             arr.Add(number);
+            }
             break;
         case 1:
             foreach (int i in arr)
